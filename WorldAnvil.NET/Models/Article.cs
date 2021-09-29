@@ -24,10 +24,11 @@ namespace WorldAnvil.NET.Models
         public AnvilItem Category;
         public AnvilItem World;
         public AnvilItem Author;
-        public Image Portrait;
+        public AnvilImage Portrait;
         public object Content;
         public string Content_Parsed;
         public List<KeyValuePair<string, Section>> Sections;
         public List<KeyValuePair<string, Relation>> Relations;
+        public Relation RelatedOrganizations;
     }
 }

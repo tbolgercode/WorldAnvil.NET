@@ -14,5 +14,6 @@ namespace WorldAnvil.NET.Models
         public string Type;
         public bool Is_Article;
         public State State;
+        public List<AnvilItem> Items;
     }
 }

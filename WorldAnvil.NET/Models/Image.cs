@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
 {
-    public class Image
+    public class AnvilImage
     {
         public ulong Id;
+        public string Title;
+        public State State;
         public string Url;
     }
 }

@@ -15,4 +15,11 @@ namespace WorldAnvil.NET.Models
         Public = 1,
         Private = 2
     }
+    public enum RelationType
+    {
+        Collection = 0,
+        Organization = 1,
+        Timeline = 2,
+        Singular = 3
+    }
 }

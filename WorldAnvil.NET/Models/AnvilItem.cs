@@ -12,6 +12,6 @@ namespace WorldAnvil.NET.Models
         public string Title;
         public string Slug;
         public string Url;
-        public Image Avatar;
+        public AnvilImage Avatar;
     }
 }
