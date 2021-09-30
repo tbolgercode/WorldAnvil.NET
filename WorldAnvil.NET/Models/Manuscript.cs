@@ -27,5 +27,6 @@ namespace WorldAnvil.NET.Models
         public string Id { get; set; }
         public string Title { get; set; }
         public State State { get; set; }
+        public Status Status { get; set; }
     }
 }

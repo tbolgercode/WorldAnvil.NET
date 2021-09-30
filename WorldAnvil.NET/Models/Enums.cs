@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
 {
+    public enum ItemType
+    {
+        Text = 0,
+        Folder = 1,
+        Image = 2
+    }
     public enum State
     {
         Public = 1,
@@ -47,7 +53,8 @@ namespace WorldAnvil.NET.Models
     }
     public enum Status
     {
-        Ongoing = 0
+        Ongoing = 0,
+        Completed = 1
     }
 
 }
