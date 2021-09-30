@@ -8,7 +8,6 @@ namespace WorldAnvil.NET.Models
 {
     public class Manuscript : ManuscriptVersion
     {
-        public Status Status { get; set; }
         public string Slug { get; set; }
         public string Description { get; set; }
         public string DescriptionParsed { get; set; }

@@ -29,7 +29,6 @@ namespace WorldAnvil.NET.Models
         public string Url { get; set; }
         public AnvilDate RegistrationDate { get; set; }
         public AnvilImage Avatar { get; set; }
-
     }
 
     public class UserManuscripts
@@ -37,5 +36,12 @@ namespace WorldAnvil.NET.Models
         public string Id;
         public string Username;
         public List<Manuscript> Manuscripts;
+    }
+
+    public class UserWorlds
+    {
+        public string Id;
+        public string Username;
+        public List<World> Worlds;
     }
 }
