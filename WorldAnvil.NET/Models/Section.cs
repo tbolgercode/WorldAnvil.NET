@@ -8,9 +8,9 @@ namespace WorldAnvil.NET.Models
 {
     public class Section
     {
-        public string Title;
-        public string Position;
-        public string Content;
-        public string Content_Parsed;
+        public string Title { get; set; }
+        public string Position { get; set; }
+        public string Content { get; set; }
+        public string Content_Parsed { get; set; }
     }
 }

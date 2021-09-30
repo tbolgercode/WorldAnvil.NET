@@ -8,9 +8,9 @@ namespace WorldAnvil.NET.Models
 {
     public class AnvilUser
     {
-        public string Id;
-        public string Username;
-        public string Url;
-        public AnvilImage Avatar;
+        public string Id { get; set; }
+        public string Username { get; set; }
+        public string Url { get; set; }
+        public AnvilImage Avatar { get; set; }
     }
 }

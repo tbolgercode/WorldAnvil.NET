@@ -8,9 +8,9 @@ namespace WorldAnvil.NET.Models
 {
     public class AnvilDate
     {
-        public DateTime Date;
+        public DateTime Date { get; set; }
         //TODO: Use TimezoneInfo
-        public int Timezone_type;
-        public string Timezone;
+        public int Timezone_type { get; set; }
+        public string Timezone { get; set; }
     }
 }

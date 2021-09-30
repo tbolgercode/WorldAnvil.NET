@@ -8,12 +8,12 @@ namespace WorldAnvil.NET.Models
 {
     public class Relation
     {
-        public string Id;
-        public string Title;
-        public string Position;
-        public string Type;
-        public bool Is_Article;
-        public State State;
-        public List<AnvilItem> Items;
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string Position { get; set; }
+        public string Type { get; set; }
+        public bool Is_Article { get; set; }
+        public State State { get; set; }
+        public List<AnvilItem> Items { get; set; }
     }
 }

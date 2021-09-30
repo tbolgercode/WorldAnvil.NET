@@ -8,11 +8,11 @@ namespace WorldAnvil.NET.Models
 {
     public class AnvilItem
     {
-        public string Id;
-        public string Title;
-        public string Slug;
-        public string Url;
-        public AnvilItem System;
-        public AnvilImage Avatar;
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string Slug { get; set; }
+        public string Url { get; set; }
+        public AnvilItem System { get; set; }
+        public AnvilImage Avatar { get; set; }
     }
 }

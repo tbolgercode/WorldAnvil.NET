@@ -8,18 +8,18 @@ namespace WorldAnvil.NET.Models
 {
     public class Template
     {
-        public string Id;
-        public string Title;
-        public State State;
-        public int? Views;
-        public string Description;
-        public string Excerpt;
-        public string Icon;
-        public int Postion;
-        public string Url;
-        public AnvilItem PageCover;
-        public AnvilItem BookCover;
-        public AnvilItem ParentCategory;
-        public AnvilItem World;
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public State State { get; set; }
+        public int? Views { get; set; }
+        public string Description { get; set; }
+        public string Excerpt { get; set; }
+        public string Icon { get; set; }
+        public int Postion { get; set; }
+        public string Url { get; set; }
+        public AnvilItem PageCover { get; set; }
+        public AnvilItem BookCover { get; set; }
+        public AnvilItem ParentCategory { get; set; }
+        public AnvilItem World { get; set; }
     }
 }

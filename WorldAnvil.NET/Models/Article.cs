@@ -8,48 +8,48 @@ namespace WorldAnvil.NET.Models
 {
     public class Article
     {
-        public string Id;
-        public string Title;
-        public TemplateType Template;
-        public bool IsWip;
-        public bool IsDraft;
-        public bool IsAdultContent;
-        public State State;
-        public string Passcode;
-        public int Wordcount;
-        public string ArticleParent;
-        public string Parent;
-        public AnvilImage Cover;
-        public AnvilDate CreationDate;
-        public AnvilDate UpdateDate;
-        public AnvilDate PublicationDate;
-        public object NotificationDate;
-        public string Tags;
-        public string Seeded;
-        public string SideBarContent;
-        public string SidePanelContentTop;
-        public string SidePanelContent;
-        public string SideBarContentBottom;
-        public string Footnotes;
-        public string FullFooter;
-        public string AuthorNotes;
-        public string Credits;
-        public string Scrapbook;
-        public string Excerpt;
-        public string Pronunciation;
-        public string Subheading;
-        public string Icon;
-        public int Position;
-        public string Url;
-        public AnvilItem Category;
-        public AnvilItem World;
-        public AnvilItem Author;
-        public AnvilImage Portrait;
-        public object Content;
-        public string Content_Parsed;
-        public List<KeyValuePair<string, Section>> Sections;
-        public List<KeyValuePair<string, Relation>> Relations;
-        public Relation RelatedOrganizations;
-        public object UserMetadata;
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public TemplateType Template { get; set; }
+        public bool IsWip { get; set; }
+        public bool IsDraft { get; set; }
+        public bool IsAdultContent { get; set; }
+        public State State { get; set; }
+        public string Passcode { get; set; }
+        public int Wordcount { get; set; }
+        public string ArticleParent { get; set; }
+        public string Parent { get; set; }
+        public AnvilImage Cover { get; set; }
+        public AnvilDate CreationDate { get; set; }
+        public AnvilDate UpdateDate { get; set; }
+        public AnvilDate PublicationDate { get; set; }
+        public object NotificationDate { get; set; }
+        public string Tags { get; set; }
+        public string Seeded { get; set; }
+        public string SideBarContent { get; set; }
+        public string SidePanelContentTop { get; set; }
+        public string SidePanelContent { get; set; }
+        public string SideBarContentBottom { get; set; }
+        public string Footnotes { get; set; }
+        public string FullFooter { get; set; }
+        public string AuthorNotes { get; set; }
+        public string Credits { get; set; }
+        public string Scrapbook { get; set; }
+        public string Excerpt { get; set; }
+        public string Pronunciation { get; set; }
+        public string Subheading { get; set; }
+        public string Icon { get; set; }
+        public int Position { get; set; }
+        public string Url { get; set; }
+        public AnvilItem Category { get; set; }
+        public AnvilItem World { get; set; }
+        public AnvilItem Author { get; set; }
+        public AnvilImage Portrait { get; set; }
+        public object Content { get; set; }
+        public string Content_Parsed { get; set; }
+        public List<KeyValuePair<string, Section>> Sections { get; set; }
+        public List<KeyValuePair<string, Relation>> Relations { get; set; }
+        public Relation RelatedOrganizations { get; set; }
+        public object UserMetadata { get; set; }
     }
 }

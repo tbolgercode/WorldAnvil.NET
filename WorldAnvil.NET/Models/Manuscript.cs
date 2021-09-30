@@ -8,24 +8,24 @@ namespace WorldAnvil.NET.Models
 {
     public class Manuscript : ManuscriptVersion
     {
-        public Status Status;
-        public string Slug;
-        public string Description;
-        public string DescriptionParsed;
-        public double Likes;
-        public double Views;
-        public double Words;
-        public AnvilItem World;
-        public AnvilImage Cover;
-        public AnvilUser Author;
-        public List<ManuscriptVersion> ActiveVersion;
-        public List<ManuscriptVersion> Versions;
+        public Status Status { get; set; }
+        public string Slug { get; set; }
+        public string Description { get; set; }
+        public string DescriptionParsed { get; set; }
+        public double Likes { get; set; }
+        public double Views { get; set; }
+        public double Words { get; set; }
+        public AnvilItem World { get; set; }
+        public AnvilImage Cover { get; set; }
+        public AnvilUser Author { get; set; }
+        public List<ManuscriptVersion> ActiveVersion { get; set; }
+        public List<ManuscriptVersion> Versions { get; set; }
     }
 
     public class ManuscriptVersion
     {
-        public string Id;
-        public string Title;
-        public State State;
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public State State { get; set; }
     }
 }
