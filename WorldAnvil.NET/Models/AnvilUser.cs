@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
 {
-    public class AnvilItem
+    public class AnvilUser
     {
         public string Id;
-        public string Title;
-        public string Slug;
+        public string Username;
         public string Url;
-        public AnvilItem System;
         public AnvilImage Avatar;
     }
 }

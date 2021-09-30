@@ -10,16 +10,36 @@ namespace WorldAnvil.NET.Models
     {
         public string Id;
         public string Title;
-        public string Template;
-        public bool Is_Wip;
-        public bool Is_Draft;
+        public TemplateType Template;
+        public bool IsWip;
+        public bool IsDraft;
+        public bool IsAdultContent;
+        public State State;
         public string Passcode;
         public int Wordcount;
-        public AnvilDate Creation_Date;
-        public AnvilDate Update_Date;
-        public AnvilDate Publication_Date;
-        public object Notification_Date;
+        public string ArticleParent;
+        public string Parent;
+        public AnvilImage Cover;
+        public AnvilDate CreationDate;
+        public AnvilDate UpdateDate;
+        public AnvilDate PublicationDate;
+        public object NotificationDate;
         public string Tags;
+        public string Seeded;
+        public string SideBarContent;
+        public string SidePanelContentTop;
+        public string SidePanelContent;
+        public string SideBarContentBottom;
+        public string Footnotes;
+        public string FullFooter;
+        public string AuthorNotes;
+        public string Credits;
+        public string Scrapbook;
+        public string Excerpt;
+        public string Pronunciation;
+        public string Subheading;
+        public string Icon;
+        public int Position;
         public string Url;
         public AnvilItem Category;
         public AnvilItem World;
@@ -30,5 +50,6 @@ namespace WorldAnvil.NET.Models
         public List<KeyValuePair<string, Section>> Sections;
         public List<KeyValuePair<string, Relation>> Relations;
         public Relation RelatedOrganizations;
+        public object UserMetadata;
     }
 }

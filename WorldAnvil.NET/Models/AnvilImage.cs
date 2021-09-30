@@ -12,5 +12,13 @@ namespace WorldAnvil.NET.Models
         public string Title;
         public State State;
         public string Url;
+        public string Description;
+        public string Tags;
+        public double Size;
+        public double Width;
+        public double Height;
+        public string Extension;
+        public AnvilItem World;
+        public AnvilUser Author;
     }
 }

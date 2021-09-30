@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FU13ySw70VhaYGZS6uKm2g8YjDOwhUt7jHNvgPeD7OdRR8t/Ry0HOfE5ORTCQtPR6LO6O+3M27tHBBbBSvrKlA==",
+  "dgSpecHash": "iXK6ndau8XITPN9pExrqXm7Sw+gGMi6uCoGiRaYIbGPBRul+2fTRFy0lauQ1janr4hp92xN+Tc0fS0KtMjRPXA==",
   "success": true,
   "projectFilePath": "F:\\Repository\\WorldAnvil.NET\\WorldAnvil.NET\\WorldAnvil.NET.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tbolg\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

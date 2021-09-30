@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
 {
-    public enum Template
-    {
-        Person = 1
-    }
     public enum State
     {
         Public = 1,
@@ -22,4 +18,36 @@ namespace WorldAnvil.NET.Models
         Timeline = 2,
         Singular = 3
     }
+    public enum TemplateType
+    {
+        Article = 0,
+        Person = 1,
+        MilitaryConflict = 2,
+        Condition = 3,
+        Document = 4,
+        Ethnicity = 5,
+        Formation = 6,
+        Location = 7,
+        Item = 8,
+        Language = 9,
+        Law = 10,
+        Settlement = 11,
+        Landmark = 12,
+        Material = 13,
+        Myth = 14,
+        Organization = 15,
+        Prose = 16,
+        Profession = 17,
+        Rank = 18,
+        Spell = 19,
+        Species = 20,
+        Technology = 21,
+        Ritual = 22,
+        Vehicle = 23
+    }
+    public enum Status
+    {
+        Ongoing = 0
+    }
+
 }
