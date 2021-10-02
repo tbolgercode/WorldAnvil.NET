@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
@@ -10,6 +12,7 @@ namespace WorldAnvil.NET.Models
     {
         public ulong Id { get; set; }
         public string Title { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public State State { get; set; }
         public string Url { get; set; }
         public string Description { get; set; }

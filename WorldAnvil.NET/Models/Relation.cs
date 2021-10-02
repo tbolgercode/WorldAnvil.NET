@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ namespace WorldAnvil.NET.Models
         public string Position { get; set; }
         public string Type { get; set; }
         public bool Is_Article { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public State State { get; set; }
         public List<AnvilItem> Items { get; set; }
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +13,9 @@ namespace WorldAnvil.NET.Models
         public string Term;
         public int? Limit;
         public int? Offset;
+        [JsonConverter(typeof(StringEnumConverter))]
         public OrderBy OrderBy;
+        [JsonConverter(typeof(StringEnumConverter))]
         public Trajectory Trajectory;
     }
 }

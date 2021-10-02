@@ -10,11 +10,14 @@ namespace WorldAnvil.NET
 {
     public interface IWorldAnvilClient
     {
+        public void InitializeClient();
+        public void ConfigureClient(string baseuri = null, string apikey = null, string applicationkey = null);
         public void SetToken(string token);
+        public void OverrideEndpoint(string url);
         public void SetApplicationKey(string key);
         public Article GetArticle(string articleid, bool load_all_properties = false);
         public Article GetArticle(AnvilItem item, bool load_all_properties = false);
-        public string PostArticle(Article article, bool load_all_properties = false);
+        public Article PostArticle(Article article, bool load_all_properties = false);
         public Article UpdateArticle(Article article, bool load_all_properties = false);
         public bool DeleteArticle(Article article, bool load_all_properties = false);
         public bool DeleteArticle(string articleid, bool load_all_properties = false);

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +12,12 @@ namespace WorldAnvil.NET.Models
     {
         public string Id { get; set; }
         public string Title { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public TemplateType Template { get; set; }
         public bool IsWip { get; set; }
         public bool IsDraft { get; set; }
         public bool IsAdultContent { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public State State { get; set; }
         public string Passcode { get; set; }
         public int Wordcount { get; set; }
