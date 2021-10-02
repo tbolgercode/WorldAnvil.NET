@@ -20,18 +20,13 @@ namespace WorldAnvil.NET.Models
         public AnvilUser Author;
     }
 
-    public class WorldItemBase
+    public class WorldItemBase : AnvilSearchOptions
     {
         public World World;
-        public string Offset;
-        public int Limit;
     }
 
     public class WorldArticles : WorldItemBase
     {
-        public string Term;
-        public string OrderBy;
-        public string Trajectory;
         public List<Article> Articles;
     }
 
@@ -42,8 +37,11 @@ namespace WorldAnvil.NET.Models
 
     public class WorldImages : WorldItemBase
     {
-        public string OrderBy;
-        public string Trajectory;
         public List<AnvilImage> Images;
+    }
+
+    public class WorldCategories : WorldItemBase
+    {
+        public List<AnvilCategory> Categories;
     }
 }

@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace WorldAnvil.NET.Models
 {
+    public enum OrderBy
+    {
+        Id = 0,
+        Title = 1,
+        NotificationDate = 2,
+        CreationDate = 3
+    }
+    public enum Trajectory
+    {
+        Asc = 0,
+        Desc = 1
+    }
     public enum ItemType
     {
         Text = 0,
