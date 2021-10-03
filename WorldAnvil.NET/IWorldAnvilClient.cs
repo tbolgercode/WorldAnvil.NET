@@ -33,7 +33,7 @@ namespace WorldAnvil.NET
         public ManuscriptVersion GetManuscriptVersion(AnvilItem item, bool load_all_properties = false);
         public ManuscriptVersionExport GetManuscriptVersionExport(string manuscriptid, bool load_all_properties = false);
         public ManuscriptVersionExport GetManuscriptVersionExport(AnvilItem item, bool load_all_properties = false);
-        public AnvilUser GetCurrentAnvilUser();
+        public AnvilUser GetCurrentAnvilUser(bool load_all_properties);
         public AnvilUser GetAnvilUser(string userid, bool load_all_properties = false);
         public AnvilUser GetAnvilUser(AnvilItem item, bool load_all_properties = false);
         public UserManuscripts GetUserManuscripts(string userid, bool load_all_properties = false); 
