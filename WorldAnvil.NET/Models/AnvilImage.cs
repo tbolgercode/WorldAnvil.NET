@@ -10,7 +10,7 @@ namespace WorldAnvil.NET.Models
 {
     public class AnvilImage
     {
-        public ulong Id { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
         [JsonConverter(typeof(StringEnumConverter))]
         public State State { get; set; }

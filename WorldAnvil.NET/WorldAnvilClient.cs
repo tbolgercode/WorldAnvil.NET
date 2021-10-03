@@ -27,12 +27,14 @@ namespace WorldAnvil.NET
 
         public bool DeleteArticle(Article article, bool load_all_properties = false)
         {
-            throw new NotImplementedException();
+            return DeleteArticle(article.Id, load_all_properties);
         }
 
         public bool DeleteArticle(string articleid, bool load_all_properties = false)
         {
-            throw new NotImplementedException();
+            SetPropertiesHeader(load_all_properties);
+            var response = _client.DeleteAsync($"article/{articleid}").Result;
+            return true;
         }
 
         public AnvilUser GetAnvilUser(string userid, bool load_all_properties = false)
@@ -229,7 +231,10 @@ namespace WorldAnvil.NET
 
         public Article PostArticle(Article article, bool load_all_properties = false)
         {
-            throw new NotImplementedException();
+            SetPropertiesHeader(load_all_properties);
+            var content = new StringContent(JsonConvert.SerializeObject(article.AsPostArticle()));
+            var response = _client.PostAsync($"article", content).Result;
+            return JsonConvert.DeserializeObject<Article>(response.Content.ReadAsStringAsync().Result);
         }
 
         public WorldArticles SearchWorldArticles(string worldid, AnvilSearchOptions options, bool load_all_properties = false)
@@ -296,7 +301,10 @@ namespace WorldAnvil.NET
 
         public Article UpdateArticle(Article article, bool load_all_properties = false)
         {
-            throw new NotImplementedException();
+            SetPropertiesHeader(load_all_properties);
+            var content = new StringContent(JsonConvert.SerializeObject(article.AsPostArticle()));
+            var response = _client.PatchAsync($"article/{article.Id}", content).Result;
+            return article;
         }
 
         public void ConfigureClient(string baseuri = null, string apikey = null, string applicationkey = null)

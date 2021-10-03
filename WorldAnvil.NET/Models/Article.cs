@@ -49,11 +49,46 @@ namespace WorldAnvil.NET.Models
         public AnvilItem World { get; set; }
         public AnvilItem Author { get; set; }
         public AnvilImage Portrait { get; set; }
-        public object Content { get; set; }
+        public string Content { get; set; }
         public string Content_Parsed { get; set; }
         public List<KeyValuePair<string, Section>> Sections { get; set; }
         public List<KeyValuePair<string, Relation>> Relations { get; set; }
         public Relation RelatedOrganizations { get; set; }
         public object UserMetadata { get; set; }
+
+        public PostArticle AsPostArticle()
+        {
+            return new PostArticle {
+                world = World.Id,
+                title = Title,
+                Template = Template,
+                isWip = IsWip,
+                isDraft = IsDraft,
+                isAdultContent = IsAdultContent,
+                state = State,
+                category = Category.Id,
+                articleParent = ArticleParent,
+                parent = Parent,
+                cover = Cover.Id,
+                content = Content,
+                tags = Tags,
+                seeded = Seeded,
+                sidebarcontent = SideBarContent,
+                sidepanelcontentTop = SidePanelContentTop,
+                sidepanelcontent = SidePanelContent,
+                sidebarcontentbottom = SideBarContentBottom,
+                footnotes = Footnotes,
+                fullfooter = FullFooter,
+                authornotes = AuthorNotes,
+                credits = Credits,
+                scrapbook = Scrapbook,
+                excerpt = Excerpt,
+                pronunciation = Pronunciation,
+                subheading = Subheading,
+                icon = Icon,
+                position = Position,
+                userMetadata = UserMetadata
+            };
+        }
     }
 }
